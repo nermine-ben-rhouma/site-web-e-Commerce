@@ -36,12 +36,10 @@ Ce projet est une application web d'e-commerce permettant de gérer des produits
 
 ## 📁 Structure du Projet
 ecommerce/
-├── com.ecommerce/          # Backend Spring Boot
-├── ecommerce-frontend/     # Frontend React
-├── testpostman/            # Collections Postman
-├── README.md
-└── .gitignore
-text## ▶️ Installation et Lancement
+ com.ecommerce/          # Backend Spring Boot
+ ecommerce-frontend/     # Frontend React
+ testpostman/            # Collections Postman
+.gitignore
 
 ### 1. Cloner le projet
 ```bash
@@ -57,5 +55,6 @@ Bashcd ecommerce-frontend
 npm install
 npm start
 Le frontend sera accessible sur : http://localhost:3000
-### 📬 Tests API
+
+📬 Tests API
 Les collections Postman sont disponibles dans le dossier testpostman/.
