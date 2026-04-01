@@ -1,0 +1,116 @@
+/* App.css - Design Moderne */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background-color: #f8fafc;
+}
+
+/* ====================== APP ====================== */
+.app {
+  min-height: 100vh;
+}
+
+/* ====================== NAVIGATION ====================== */
+.navbar {
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.logo-icon {
+  font-size: 32px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 6px 0;
+}
+
+.nav-link:hover {
+  color: white;
+  transform: translateY(-2px);
+}
+
+.nav-link.active {
+  color: white;
+  font-weight: 600;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.nav-right {
+  font-size: 15px;
+  opacity: 0.9;
+}
+
+/* ====================== MAIN CONTENT ====================== */
+.main-content {
+  max-width: 1300px;
+  margin: 40px auto;
+  padding: 0 40px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .nav-container {
+    padding: 0 20px;
+    flex-wrap: wrap;
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    gap: 15px;
+  }
+  
+  .nav-links {
+    gap: 20px;
+    order: 3;
+    width: 100%;
+    justify-content: center;
+  }
+}
