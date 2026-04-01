@@ -57,5 +57,5 @@ Bashcd ecommerce-frontend
 npm install
 npm start
 Le frontend sera accessible sur : http://localhost:3000
-📬 Tests API
+### 📬 Tests API
 Les collections Postman sont disponibles dans le dossier testpostman/.
