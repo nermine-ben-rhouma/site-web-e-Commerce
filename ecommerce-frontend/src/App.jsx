@@ -13,6 +13,7 @@ import GestionCategories from './pages/admin/GestionCategories'
 import GestionFournisseurs from './pages/admin/GestionFournisseurs'
 import GestionCommandes from './pages/admin/GestionCommandes'
 import GestionUsers from './pages/superadmin/GestionUsers'
+import VerifyEmail from './pages/auth/VerifyEmail'
 
 function App() {
   return (
@@ -70,6 +71,7 @@ function App() {
               </ProtectedRoute>
             } />
             <Route path="*" element={<Navigate to="/login" replace />} />
+            <Route path="/verify-email" element={<VerifyEmail />} />
           </Routes>
         </div>
       </BrowserRouter>

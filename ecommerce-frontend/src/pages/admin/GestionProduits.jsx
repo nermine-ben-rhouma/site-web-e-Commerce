@@ -22,6 +22,7 @@ function GestionProduits() {
     api.get('/categories').then((r) => setCategories(r.data))
     api.get('/fournisseurs').then((r) => setFournisseurs(r.data))
   }, [])
+  
 
   const fetchAll = async () => {
     setLoading(true)
@@ -291,10 +292,12 @@ function GestionProduits() {
                 >
                   Annuler
                 </button>
+                
               </div>
             </form>
           </div>
         </div>
+        
       )}
     </div>
   )

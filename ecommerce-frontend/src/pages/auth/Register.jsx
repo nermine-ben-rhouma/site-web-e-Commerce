@@ -28,7 +28,9 @@ function Register() {
         password: form.password,
       })
       toast.success('Inscription réussie ! Connectez-vous.')
+      toast.success('Inscription réussie ! Vérifiez votre email.')
       navigate('/login')
+     
     } catch (err) {
       toast.error(err.response?.data || 'Erreur lors de l\'inscription')
     } finally {

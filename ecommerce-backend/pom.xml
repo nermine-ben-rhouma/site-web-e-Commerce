@@ -11,6 +11,7 @@
         <relativePath/>
     </parent>
 
+
     <groupId>com.ecommerce</groupId>
     <artifactId>ecommerce-backend</artifactId>
     <version>1.0.0</version>
@@ -28,6 +29,16 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!-- Email -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-mail</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
         </dependency>
 
         <!-- JPA + MySQL -->
@@ -52,6 +63,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-validation</artifactId>
         </dependency>
+
 
         <!-- JWT ← VERSION AJOUTÉE -->
         <dependency>
@@ -123,6 +135,7 @@
                     </compilerArgs>
                 </configuration>
             </plugin>
+
         </plugins>
     </build>
 </project>

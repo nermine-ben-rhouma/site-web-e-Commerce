@@ -53,4 +53,7 @@ public class User {
     public enum Role {
         SUPER_ADMIN, ADMIN, CLIENT
     }
+    // Ajouter ce champ dans User.java
+    @Column(nullable = false)
+    private boolean emailVerifie = false;
 }
